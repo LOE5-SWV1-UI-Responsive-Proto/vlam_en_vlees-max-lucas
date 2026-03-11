@@ -1,5 +1,83 @@
-@media (max-width: 767px) {
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Gloock&family=Gurajada&family=Inria+Serif:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Jaini+Purva&family=Jockey+One&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Oswald:wght@200..700&display=swap');
+
+/* telefoon */
+@media (max-width: 390px) {
   body {
-    color: red;
+    padding: 0px;
+    margin: 0px;
+  }
+  header div {
+    background-color: black;
+    display: flex;
+  }
+  header div img {
+    width: 30vw;
+    margin-left: auto;
+    margin-right: 3vw;
+  }
+  .burger-menu {
+    fill:  white;
+    width: 15vw;
+    height: 15vh;
+    margin-left: 2vw;
+  }
+  header #header-foto {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+  main article h1 {
+    font-family: "Gloock", serif;
+  }
+  main {
+    text-align: center;
+  }
+  main article p {
+    font-family: "Inria Serif", serif;
+    font-weight: 300;
+    font-style: normal;
+  }
+  #lijn {
+    justify-self: center;
+    margin-top: -2.5vh;
+    height: 0.7vh;
+    width: 90vw;
+    background-color: black;
+  }
+  .cat p {
+    margin: 0px;
+    padding: 0px;
+    font-family: "Jockey One", sans-serif;
+    font-style: normal;
+  }
+  .cat img {
+    width: 90vw;
+    height: 30vh;
+    object-fit: cover;
+    margin-top: 2vh;
+  }
+  footer {
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2vh;
+  }
+  footer p {
+    color: rgb(179, 179, 179);
+  }
+}
+
+/* tablet */
+@media (min-width: 391px) and (max-width: 1023px) {
+  body {
+    color: aqua;
+  }
+}
+
+/* desktop */
+@media (min-width: 1024px) {
+  body {
+    color: green;   
   }
 }
