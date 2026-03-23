@@ -10,6 +10,23 @@
         background-color: #111111;
     }
 
+    h1 {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 2rem;
+        justify-items: center;
+        align-items: center;
+        padding-bottom: 50px;
+    }
+
+    section {
+        display: grid;
+        grid-template-rows: 1fr;
+        grid-template-rows: 2rem 2rem 2rem 2rem 2rem 2rem;
+        justify-items: center;
+        align-items: center;
+    }
+
 
 /* tablets */
 @media (min-width: 769px) and (max-width: 1279px) {
