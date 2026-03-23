@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Inder&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Jockey+One&family=Lexend:wght@100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
 /* mobile-first */
 
     * {
@@ -10,6 +12,10 @@
         background-color: #111111;
     }
 
+    nav {
+        display: flex;
+    }
+
     h1 {
         display: grid;
         grid-template-columns: 1fr;
@@ -17,17 +23,34 @@
         justify-items: center;
         align-items: center;
         padding-bottom: 50px;
+        padding-top: 35px;
+        font-family: "Jockey One", sans-serif;
+    }
+
+    p {
+        font-family: "Inder", sans-serif;
     }
 
     section {
         display: grid;
         grid-template-rows: 1fr;
-        grid-template-rows: 2rem 2rem 2rem 2rem 2rem 2rem;
+        grid-template-rows: 2rem 2rem 2rem;
         justify-items: center;
         align-items: center;
+        padding-bottom: 25px;
+        font-family: "Jockey One", sans-serif;
     }
 
+    span {
+        color: #922C06;
+    }
 
+    footer {
+        color: #ffffff;
+        background-color: #111111;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
 /* tablets */
 @media (min-width: 769px) and (max-width: 1279px) {
 
