@@ -12,8 +12,17 @@
         background-color: #111111;
     }
 
+    header .hamburger {
+    justify-self: end;
+    align-self: center;
+    padding-left: 15px;
+}
+
     nav {
         display: flex;
+        flex-direction: row;
+        gap: 1vw;
+        justify-content: end;
     }
 
     h1 {
@@ -34,7 +43,8 @@
     section {
         display: grid;
         grid-template-rows: 1fr;
-        grid-template-rows: 2rem 2rem 2rem;
+        /* grid-template-rows: 2rem 2rem 2rem 2rem; */
+        grid-auto-rows: max-content;
         justify-items: center;
         align-items: center;
         padding-bottom: 25px;
@@ -49,7 +59,7 @@
         color: #ffffff;
         background-color: #111111;
         padding-top: 20px;
-        padding-bottom: 20px;
+        padding-bottom: 5%;
     }
 /* tablets */
 @media (min-width: 769px) and (max-width: 1279px) {
