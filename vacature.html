@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Vlam & Vlees – Zoetermeer</title>
+  <title>Vacatures – Vlam & Vlees</title>
   <link rel="stylesheet" href="css/lucas.css">
 </head>
 <body>
@@ -35,58 +35,28 @@
       </svg>
       <img class="logo" src="img/logo.png" alt="Vlam en Vlees Logo">
     </nav>
-    <div class="hero-wrapper">
-      <img class="hero" src="img/homepage4.png" alt="Gegrild vlees">
-      <div class="hero-overlay"></div>
-    </div>
+    <img class="vac-hero" src="img/werkplek.png" alt="Het team van Vlam en Vlees">
   </header>
 
-  <section class="intro">
-    <h2 class="section-title">ulam en vlees</h2>
-    <p class="intro-text">
-      <span class="accent">Vlam</span> &amp; <span class="accent">Vlees</span>: Meesters in
-      <span class="accent">vuur</span> en <span class="accent">smaak</span>.<br>
-      Van vlijmscherp gegrilde steaks tot low &amp; slow klassiekers.
-      Wij combineren vakmanschap met de beste cuts voor een
-      onvergetelijke, rokerige smaakbeleving.
+  <section class="vac-content">
+    <h1>komen werken?</h1>
+    <p>
+      Wij zijn opzoek naar jonge en fitte mensen die een vrij lege schema hebben en graag ervaring willen opbouwen.
+    </p>
+    <p>
+      je kunt soliciteren door een e-mail te sturen naar
+      <a href="mailto:xxx@gmail.com">xxx@gmail.com</a>
+      of fysiek naar onze vesteging toe te gaan.
     </p>
   </section>
 
-  <section class="categories">
-    <div class="divider-row">
-      <span class="divider-line"></span>
-      <h2 class="section-title cat-title">categorieen</h2>
-      <span class="divider-line"></span>
+  <section class="salaris-sectie">
+    <h2>salaris berekenen</h2>
+    <div class="salaris-rij">
+      <input class="salaris-veld" id="leeftijdInput" type="number" placeholder="leeftijd" min="15" max="99">
+      <input class="salaris-eenheid" id="urenInput" type="number" placeholder="u" min="1" max="60">
     </div>
-
-    <div class="cat-grid">
-      <article class="cat-card">
-        <a href="menu.html?cat=barbeque">
-          <div class="cat-img-wrap">
-            <img src="img/barbeque.png" alt="Barbeque">
-          </div>
-          <p class="cat-label">barbeque</p>
-        </a>
-      </article>
-
-      <article class="cat-card">
-        <a href="menu.html?cat=drank">
-          <div class="cat-img-wrap">
-            <img src="img/drank.png" alt="Drank">
-          </div>
-          <p class="cat-label">drank</p>
-        </a>
-      </article>
-
-      <article class="cat-card">
-        <a href="menu.html?cat=toetjes">
-          <div class="cat-img-wrap">
-            <img src="img/toetjes.png" alt="Toetjes">
-          </div>
-          <p class="cat-label">toetjes</p>
-        </a>
-      </article>
-    </div>
+    <div class="salaris-knop" id="salarisResultaat">salaris</div>
   </section>
 
   <footer>
@@ -99,5 +69,8 @@
     </nav>
     <p class="footer-copy">&copy; 2026 Vlam &amp; Vlees. Alle rechten voorbehouden.</p>
   </footer>
+
+  <script src="js/lucas.js"></script>
+  <script src="js/vacatures.js"></script>
 </body>
 </html>
