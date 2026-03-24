@@ -9,19 +9,7 @@
     <meta name="author" content="Max Slotboom">
     <title>Menu - Vlam en Vlees</title>
     <link rel="stylesheet" href="css/max.css">
-    <style>
-        section.highlighted {
-            outline: 3px solid #c0392b;
-            border-radius: 6px;
-            background-color: rgba(192, 57, 43, 0.07);
-            animation: fadeHighlight 3s ease forwards;
-        }
-
-        @keyframes fadeHighlight {
-            0%   { background-color: rgba(192, 57, 43, 0.15); outline-color: #c0392b; }
-            100% { background-color: transparent; outline-color: transparent; }
-        }
-    </style>
+    <script src="lib/"></script>
 </head>
 <body>
     <header id="max_header">
@@ -36,13 +24,13 @@
     </header>
     <main>
         <h1 class>Standaard Menu Kaart</h1>
-        <section id="barbeque">
+        <section>
             <h2><span>Voorgerechten</span></h2><br>
                 <p>**BBQ Nacho's** • €9,50 Tortillachips met pulled pork, cheddar, jalapeños, BBQ-saus en zure room<br>
                 <span>**Smoked Wings** • €8,50 Gerookte kippenvleugels met keuze uit: BBQ, Buffalo of Honey-Sriracha saus</span><br>
                 **Uienringen** • €6,50 Krokante uienringen met ranch dressing</p><br>
         </section>
-        <section id="hoofdgerechten">
+        <section>
             <h2><span>Hoofdgerechten</span></h2><br>
                 <p>*Alle hoofdgerechten worden geserveerd met coleslaw en maiskolf*</p><br>
                 <h3><span>Van de smoker</span></h3><br>
@@ -58,7 +46,7 @@
                     <p>**The Pitmaster** • €32,50    Combina e van brisket, pulled pork en ribs<br>
                     <span>**Family Feast** (2-3 pers.) • €59,50    Selectie van al onze BBQ-specialiteiten</span></p><br>
         </section>
-        <section id="toetjes">
+        <section>
             <h2>Deserts</h2><br>
                 <p><span>**Apple Cobbler** • €7,50    Warme appelkruimel met vanille-ijs</span><br>
                 **Chocolate Brownie** • €6,50<br>
@@ -82,7 +70,7 @@
                 - Alabama White Sauce<br>
                 <span>Alle sauzen • €1,50</span></p><br>
         </section>
-        <section id="drank">
+        <section>
             <h2>Drankjes</h2><br>
                 <p><span>Frisdrank • €2,75 - Cola - Sprite - Fanta - Ice Tea</span><br>
                 Bieren - Tap Pils • €3,00 - Speciaal Bier (vraag naar ons assorment) • vanaf €4,50<br>
@@ -96,16 +84,5 @@
     <footer>
         <p>contact@vlamenvlees.nl</p>
     </footer>
-
-    <script>
-        const cat = new URLSearchParams(window.location.search).get('cat');
-        if (cat) {
-            const target = document.getElementById(cat);
-            if (target) {
-                target.scrollIntoView({ behavior: 'smooth', block: 'start' });
-                target.classList.add('highlighted');
-            }
-        }
-    </script>
 </body>
 </html>
