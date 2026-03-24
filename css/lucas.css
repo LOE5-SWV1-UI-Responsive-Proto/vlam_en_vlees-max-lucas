@@ -37,39 +37,6 @@ img {
   display: block;
 }
 
-/* ── HEADER ── */
-
-header {
-  background-color: var(--zwart);
-}
-
-.topbar {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 10px 16px;
-}
-
-.hamburger {
-  cursor: pointer;
-}
-
-.logo {
-  max-height: 55px;
-  object-fit: contain;
-}
-
-.hero-wrapper {
-  position: relative;
-}
-
-.hero {
-  width: 100%;
-  height: 220px;
-  object-fit: cover;
-  object-position: center 30%;
-}
-
 /* ── NAV DRAWER ── */
 
 .nav-overlay {
@@ -147,6 +114,39 @@ header {
 .nav-drawer-links a:hover {
   color: var(--rood);
   padding-left: 8px;
+}
+
+/* ── HEADER ── */
+
+header {
+  background-color: var(--zwart);
+}
+
+.topbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 16px;
+}
+
+.hamburger {
+  cursor: pointer;
+}
+
+.logo {
+  max-height: 55px;
+  object-fit: contain;
+}
+
+.hero-wrapper {
+  position: relative;
+}
+
+.hero {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  object-position: center 30%;
 }
 
 /* ── INDEX: INTRO ── */
@@ -372,11 +372,18 @@ footer {
   font-family: var(--font-label);
   font-size: 0.95rem;
   background-color: #e0dbd5;
+  border: none;
   border-radius: var(--radius);
   padding: 14px 18px;
   color: var(--zwart);
-  display: flex;
-  align-items: center;
+  width: 60px;
+  text-align: center;
+  outline: none;
+}
+
+.salaris-eenheid::placeholder {
+  color: var(--zwart);
+  opacity: 1;
 }
 
 .salaris-knop {
@@ -389,14 +396,8 @@ footer {
   border-radius: var(--radius);
   padding: 14px 18px;
   color: var(--zwart);
-  text-align: left;
-  cursor: pointer;
+  text-align: center;
   transition: background-color 0.2s, color 0.2s;
-}
-
-.salaris-knop:hover {
-  background-color: var(--rood);
-  color: var(--wit);
 }
 
 /* ── TABLET ≥ 768px ── */

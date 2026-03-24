@@ -53,10 +53,10 @@
   <section class="salaris-sectie">
     <h2>salaris berekenen</h2>
     <div class="salaris-rij">
-      <input class="salaris-veld" type="number" placeholder="leeftijd" min="15" max="99">
-      <span class="salaris-eenheid">u</span>
+      <input class="salaris-veld" id="leeftijdInput" type="number" placeholder="leeftijd" min="15" max="99">
+      <input class="salaris-eenheid" id="urenInput" type="number" placeholder="u" min="1" max="60">
     </div>
-    <button class="salaris-knop">salaris</button>
+    <div class="salaris-knop" id="salarisResultaat">salaris</div>
   </section>
 
   <footer>
@@ -71,5 +71,6 @@
   </footer>
 
   <script src="js/lucas.js"></script>
+  <script src="js/vacatures.js"></script>
 </body>
 </html>
