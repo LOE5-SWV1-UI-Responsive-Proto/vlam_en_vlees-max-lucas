@@ -1,111 +1,149 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="nl">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="description" content="De menu pagina voor het restaurant Vlam en Vlees">
-    <meta name="keywords" content="Menu, Lunch, Dinner, Voorgerecht, Hoofdgerecht, Dessert, Wings, Beef, Prok, Chicken">
-    <meta name="author" content="Max Slotboom">
-    <title>Menu - Vlam en Vlees</title>
-    <link rel="stylesheet" href="css/max.css">
-    <style>
-        section.highlighted {
-            outline: 3px solid #c0392b;
-            border-radius: 6px;
-            background-color: rgba(192, 57, 43, 0.07);
-            animation: fadeHighlight 3s ease forwards;
-        }
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="De menu pagina voor het restaurant Vlam en Vlees">
+  <meta name="keywords" content="Menu, Lunch, Dinner, Voorgerecht, Hoofdgerecht, Dessert, Wings, Beef, Prok, Chicken">
+  <meta name="author" content="Max Slotboom">
+  <title>Menu - Vlam en Vlees</title>
+  <link rel="stylesheet" href="css/max.css">
+  <style>
+    section.highlighted {
+      outline: 3px solid #c0392b;
+      border-radius: 6px;
+      background-color: rgba(192, 57, 43, 0.07);
+      animation: fadeHighlight 3s ease forwards;
+    }
 
-        @keyframes fadeHighlight {
-            0%   { background-color: rgba(192, 57, 43, 0.15); outline-color: #c0392b; }
-            100% { background-color: transparent; outline-color: transparent; }
-        }
-    </style>
+    @keyframes fadeHighlight {
+      0%   { background-color: rgba(192, 57, 43, 0.15); outline-color: #c0392b; }
+      100% { background-color: transparent; outline-color: transparent; }
+    }
+  </style>
 </head>
 <body>
-    <header id="max_header">
-        <a href="index.html"><img src="img/logo.png"></a>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="menu.html">Menu</a>
-            <a href="locatie.html">Locatie</a>
-            <a href="reserveer.html">Reserveer</a>
-            <a href="vacatures.html">Vacatures</a>
-        </nav>
-    </header>
-    <main>
-        <h1 class>Standaard Menu Kaart</h1>
-        <section id="barbeque">
-            <h2><span>Voorgerechten</span></h2><br>
-                <p>**BBQ Nacho's** • €9,50 Tortillachips met pulled pork, cheddar, jalapeños, BBQ-saus en zure room<br>
-                <span>**Smoked Wings** • €8,50 Gerookte kippenvleugels met keuze uit: BBQ, Buffalo of Honey-Sriracha saus</span><br>
-                **Uienringen** • €6,50 Krokante uienringen met ranch dressing</p><br>
-        </section>
-        <section id="hoofdgerechten">
-            <h2><span>Hoofdgerechten</span></h2><br>
-                <p>*Alle hoofdgerechten worden geserveerd met coleslaw en maiskolf*</p><br>
-                <h3><span>Van de smoker</span></h3><br>
-                    <p>**Beef Brisket** • €24,50 14 uur lang gerookt rundvlees, gekruid met ons eigen rub<br>
-                    <span>**Pulled Pork** • €19,50 Langzaam gegaard varkensvlees met BBQ-saus</span><br>
-                    **Baby Back Ribs**<br>
-                    <span>- Halve rack • €19,50</span><br>
-                    - Hele rack • €28,50<br>
-                    <span>Malse varkensribbetjes met BBQ-glazuur</span><br>
-                    **Smoked Chicken** • €18,50 Halve kip, langzaam gerookt met kruiden
-                    </p><br>
-                <h3><span>BBQ platters</span></h3><br>
-                    <p>**The Pitmaster** • €32,50    Combina e van brisket, pulled pork en ribs<br>
-                    <span>**Family Feast** (2-3 pers.) • €59,50    Selectie van al onze BBQ-specialiteiten</span></p><br>
-        </section>
-        <section id="toetjes">
-            <h2>Deserts</h2><br>
-                <p><span>**Apple Cobbler** • €7,50    Warme appelkruimel met vanille-ijs</span><br>
-                **Chocolate Brownie** • €6,50<br>
-                <span>Met pecannoten en karamelsaus</span><br>
-                **Banana Foster** • €7,50<br>
-                <span>Gekarameliseerde banaan met rum en vanille-ijs</span></p><br>
-        </section>
-        <section>
-            <h2>Sides</h2><br>
-                <p><span>- Mac 'n Cheese • €4,50</span><br>
-                - Geroosterde Groenten • €4,00<br>
-                <span>- Zoete Aardappel Friet • €4,50</span><br>
-                - Aardappel Wedges • €4,00<br>
-                <span>- Extra Coleslaw • €3,50</span></p><br>
-        </section>
-        <section>
-            <h2>Sauzen</h2><br>
-                <p><span>- Classic BBQ</span><br>
-                - Honey Mustard<br>
-                <span>- Spicy Chipotle</span><br>
-                - Alabama White Sauce<br>
-                <span>Alle sauzen • €1,50</span></p><br>
-        </section>
-        <section id="drank">
-            <h2>Drankjes</h2><br>
-                <p><span>Frisdrank • €2,75 - Cola - Sprite - Fanta - Ice Tea</span><br>
-                Bieren - Tap Pils • €3,00 - Speciaal Bier (vraag naar ons assorment) • vanaf €4,50<br>
-                <span>Wijnen - Huiswijn rood/wit/rosé per glas • €4,50 - Fles huiswijn • €22,50</span></p><br>
-        </section>
-        <section>
-            <p>*Heeft u een allergie? Meld het ons.*<br>
-            *Prijzen zijn inclusief BTW*</p>
-        </section>
-    </main>
-    <footer>
-        <p>contact@vlamenvlees.nl</p>
-    </footer>
 
-    <script>
-        const cat = new URLSearchParams(window.location.search).get('cat');
-        if (cat) {
-            const target = document.getElementById(cat);
-            if (target) {
-                target.scrollIntoView({ behavior: 'smooth', block: 'start' });
-                target.classList.add('highlighted');
-            }
+  <div class="nav-overlay" id="navOverlay"></div>
+
+  <aside class="nav-drawer" id="navDrawer">
+    <button class="nav-close" id="navClose" aria-label="Sluiten">
+      <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22">
+        <line x1="3" y1="3" x2="19" y2="19" stroke="white" stroke-width="2" stroke-linecap="round"/>
+        <line x1="19" y1="3" x2="3" y2="19" stroke="white" stroke-width="2" stroke-linecap="round"/>
+      </svg>
+    </button>
+    <nav class="nav-drawer-links">
+      <a href="index.html">landingspagina</a>
+      <a href="menu.html">menu</a>
+      <a href="vacature.html">vacature</a>
+      <a href="reserveer.html">reserveren</a>
+      <a href="openingstijden.html">openingstijden</a>
+    </nav>
+  </aside>
+
+  <header>
+    <nav class="topbar">
+      <svg class="hamburger" id="hamburgerBtn" xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30">
+        <line x1="5" y1="7"  x2="25" y2="7"  stroke="white" stroke-width="2" stroke-linecap="round"/>
+        <line x1="5" y1="15" x2="25" y2="15" stroke="white" stroke-width="2" stroke-linecap="round"/>
+        <line x1="5" y1="23" x2="25" y2="23" stroke="white" stroke-width="2" stroke-linecap="round"/>
+      </svg>
+      <img class="logo" src="img/logo.png" alt="Vlam en Vlees Logo">
+    </nav>
+  </header>
+
+  <main>
+    <h1>Standaard Menu Kaart</h1>
+
+    <section id="barbeque">
+      <h2><span>Voorgerechten</span></h2><br>
+      <p>**BBQ Nacho's** • €9,50 Tortillachips met pulled pork, cheddar, jalapeños, BBQ-saus en zure room<br>
+      <span>**Smoked Wings** • €8,50 Gerookte kippenvleugels met keuze uit: BBQ, Buffalo of Honey-Sriracha saus</span><br>
+      **Uienringen** • €6,50 Krokante uienringen met ranch dressing</p><br>
+    </section>
+
+    <section id="hoofdgerechten">
+      <h2><span>Hoofdgerechten</span></h2><br>
+      <p>*Alle hoofdgerechten worden geserveerd met coleslaw en maiskolf*</p><br>
+      <h3><span>Van de smoker</span></h3><br>
+      <p>**Beef Brisket** • €24,50 14 uur lang gerookt rundvlees, gekruid met ons eigen rub<br>
+      <span>**Pulled Pork** • €19,50 Langzaam gegaard varkensvlees met BBQ-saus</span><br>
+      **Baby Back Ribs**<br>
+      <span>- Halve rack • €19,50</span><br>
+      - Hele rack • €28,50<br>
+      <span>Malse varkensribbetjes met BBQ-glazuur</span><br>
+      **Smoked Chicken** • €18,50 Halve kip, langzaam gerookt met kruiden</p><br>
+      <h3><span>BBQ platters</span></h3><br>
+      <p>**The Pitmaster** • €32,50 Combinatie van brisket, pulled pork en ribs<br>
+      <span>**Family Feast** (2-3 pers.) • €59,50 Selectie van al onze BBQ-specialiteiten</span></p><br>
+    </section>
+
+    <section id="toetjes">
+      <h2>Desserts</h2><br>
+      <p><span>**Apple Cobbler** • €7,50 Warme appelkruimel met vanille-ijs</span><br>
+      **Chocolate Brownie** • €6,50<br>
+      <span>Met pecannoten en karamelsaus</span><br>
+      **Banana Foster** • €7,50<br>
+      <span>Gekarameliseerde banaan met rum en vanille-ijs</span></p><br>
+    </section>
+
+    <section>
+      <h2>Sides</h2><br>
+      <p><span>- Mac 'n Cheese • €4,50</span><br>
+      - Geroosterde Groenten • €4,00<br>
+      <span>- Zoete Aardappel Friet • €4,50</span><br>
+      - Aardappel Wedges • €4,00<br>
+      <span>- Extra Coleslaw • €3,50</span></p><br>
+    </section>
+
+    <section>
+      <h2>Sauzen</h2><br>
+      <p><span>- Classic BBQ</span><br>
+      - Honey Mustard<br>
+      <span>- Spicy Chipotle</span><br>
+      - Alabama White Sauce<br>
+      <span>Alle sauzen • €1,50</span></p><br>
+    </section>
+
+    <section id="drank">
+      <h2>Drankjes</h2><br>
+      <p><span>Frisdrank • €2,75 - Cola - Sprite - Fanta - Ice Tea</span><br>
+      Bieren - Tap Pils • €3,00 - Speciaal Bier (vraag naar ons assortiment) • vanaf €4,50<br>
+      <span>Wijnen - Huiswijn rood/wit/rosé per glas • €4,50 - Fles huiswijn • €22,50</span></p><br>
+    </section>
+
+    <section>
+      <p>*Heeft u een allergie? Meld het ons.*<br>
+      *Prijzen zijn inclusief BTW*</p>
+    </section>
+  </main>
+
+  <footer>
+    <img class="footer-logo" src="img/logo.png" alt="Vlam en Vlees">
+    <p class="footer-tagline">Meesters in vuur &amp; smaak — Zoetermeer</p>
+    <nav class="footer-nav">
+      <a href="menu.html">Menu</a>
+      <a href="reserveer.html">Reserveren</a>
+      <a href="#">Contact</a>
+    </nav>
+    <p class="footer-copy">&copy; 2026 Vlam &amp; Vlees. Alle rechten voorbehouden.</p>
+  </footer>
+
+  <script src="lib/burger-menu.js"></script>
+  <script>
+    const cat = new URLSearchParams(window.location.search).get('cat');
+    if (cat) {
+      const ids = cat === 'barbeque' ? ['barbeque', 'hoofdgerechten'] : [cat];
+      ids.forEach((id, i) => {
+        const el = document.getElementById(id);
+        if (el) {
+          if (i === 0) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+          el.classList.add('highlighted');
         }
-    </script>
+      });
+    }
+  </script>
 </body>
 </html>

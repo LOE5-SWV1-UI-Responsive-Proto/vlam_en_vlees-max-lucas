@@ -140,6 +140,7 @@ header {
 
 .hero-wrapper {
   position: relative;
+  line-height: 0;
 }
 
 .hero {
@@ -507,4 +508,107 @@ footer {
     grid-column: 2;
     grid-row: 3;
   }
+}
+
+/* ── RESERVEREN ── */
+
+.res-hero {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  object-position: center 40%;
+}
+
+.res-form-sectie {
+  padding: 24px 20px 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.res-velden {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+.res-veld {
+  font-family: var(--font-label);
+  font-size: 0.95rem;
+  letter-spacing: 0.03em;
+  background-color: #e0dbd5;
+  border: none;
+  border-radius: var(--radius);
+  padding: 14px 18px;
+  color: var(--zwart);
+  width: 100%;
+  outline: none;
+}
+
+.res-veld::placeholder {
+  color: var(--zwart);
+  opacity: 1;
+}
+
+.res-veld[type="datetime-local"] {
+  color: var(--zwart);
+}
+
+.res-knop {
+  font-family: var(--font-label);
+  font-size: 0.95rem;
+  letter-spacing: 0.04em;
+  background-color: #e0dbd5;
+  border: none;
+  border-radius: var(--radius);
+  padding: 14px 42px;
+  color: var(--zwart);
+  cursor: pointer;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+.res-knop:hover {
+  background-color: var(--rood);
+  color: var(--wit);
+}
+
+.res-uitleg {
+  padding: 28px 20px 48px;
+  text-align: center;
+}
+
+.res-uitleg h2 {
+  font-family: var(--font-label);
+  font-weight: 700;
+  font-size: 1.3rem;
+  margin-bottom: 14px;
+}
+
+.res-uitleg p {
+  font-family: var(--font-body);
+  font-size: 0.92rem;
+  line-height: 1.75;
+  color: #1a1a1a;
+}
+
+@media (min-width: 768px) {
+  .res-hero { height: 340px; }
+
+  .res-form-sectie {
+    max-width: 480px;
+    margin: 0 auto;
+    padding: 32px 0 8px;
+  }
+
+  .res-uitleg {
+    max-width: 480px;
+    margin: 0 auto;
+    padding: 28px 0 60px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .res-hero { height: 420px; }
 }
