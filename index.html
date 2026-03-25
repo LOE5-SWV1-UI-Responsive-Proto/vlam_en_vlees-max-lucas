@@ -5,6 +5,208 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Vlam & Vlees – Zoetermeer</title>
   <link rel="stylesheet" href="css/lucas.css">
+  <style>
+    /* ── DESKTOP NAV (1024px+ only) ── */
+
+    .desktop-nav {
+      display: none;
+    }
+
+    /* ── TABLET (768px – 1023px): hamburger stays, full-bleed hero like mobile ── */
+
+    @media (min-width: 768px) {
+      .hero-wrapper {
+        display: block;
+        padding: 0;
+      }
+
+      .hero {
+        width: 100%;
+        height: 350px;
+        border-radius: 0;
+        object-position: center 30%;
+        box-shadow: none;
+      }
+    }
+
+    /* ── TABLET: 1-col cat grid, taller images ── */
+    @media (min-width: 768px) and (max-width: 1023px) {
+      .cat-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .cat-img-wrap img {
+        height: 280px;
+      }
+    }
+
+    /* ── DESKTOP (1024px+): horizontal nav, side-by-side intro ── */
+
+    @media (min-width: 1024px) {
+      /* Show desktop nav, hide hamburger + drawer */
+      .hamburger,
+      .nav-overlay,
+      .nav-drawer {
+        display: none !important;
+      }
+
+      .desktop-nav {
+        display: flex;
+        align-items: center;
+        gap: 6px;
+      }
+
+      .desktop-nav a {
+        font-family: var(--font-label);
+        font-size: 0.92rem;
+        font-weight: 400;
+        letter-spacing: 0.07em;
+        text-transform: lowercase;
+        color: rgba(255, 255, 255, 0.82);
+        text-decoration: none;
+        padding: 8px 14px;
+        border-radius: var(--radius);
+        transition: color 0.2s, background-color 0.2s;
+      }
+
+      .desktop-nav a:hover {
+        color: var(--wit);
+        background-color: rgba(255, 255, 255, 0.08);
+      }
+
+      .desktop-nav a.nav-cta {
+        background-color: var(--rood);
+        color: var(--wit);
+        padding: 8px 20px;
+      }
+
+      .desktop-nav a.nav-cta:hover {
+        background-color: #a93226;
+      }
+
+      .topbar {
+        max-width: 1100px;
+        margin: 0 auto;
+        padding: 14px 48px;
+      }
+
+      /* Hero: back to full-bleed on desktop, hidden (image shows in intro grid) */
+      .hero-wrapper {
+        display: block;
+        padding: 0;
+        background-color: var(--zwart);
+      }
+
+      .hero {
+        width: 100%;
+        height: 480px;
+        border-radius: 0;
+        object-position: center 30%;
+        box-shadow: none;
+      }
+
+      /* 2-col intro + feature image */
+      .intro-desktop-wrap {
+        max-width: 1100px;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        gap: 48px;
+        padding: 56px 48px 48px;
+      }
+
+      .intro {
+        max-width: unset;
+        padding: 0;
+        text-align: left;
+        margin: 0;
+      }
+
+      .intro .section-title {
+        text-align: left;
+      }
+
+      .intro-text {
+        font-size: 1rem;
+        line-height: 1.85;
+      }
+
+      .intro-feature-img {
+        display: block;
+        width: 100%;
+        height: 340px;
+        object-fit: cover;
+        border-radius: 8px;
+        box-shadow: 0 8px 32px rgba(0, 0, 0, 0.18);
+      }
+
+      /* Hide full-bleed hero on desktop (shown in intro grid instead) */
+      .hero-hide-desktop {
+        display: none;
+      }
+
+      /* Categories */
+      .categories-wrap {
+        background-color: #f0ebe5;
+        padding: 0 0 20px;
+      }
+
+      .categories {
+        max-width: 1100px;
+        margin: 0 auto;
+        padding: 48px 48px 60px;
+      }
+
+      .cat-img-wrap img {
+        height: 240px;
+      }
+
+      /* Footer - truly full width, override lucas.css max-width */
+      footer {
+        display: block !important;
+        width: 100% !important;
+        max-width: 100% !important;
+        margin: 0 !important;
+        padding: 36px 64px 28px !important;
+        box-sizing: border-box;
+      }
+
+      .footer-inner {
+        display: grid;
+        grid-template-columns: auto 1fr;
+        grid-template-rows: auto auto auto;
+        column-gap: 36px;
+        align-items: center;
+        width: 100%;
+      }
+
+      .footer-logo {
+        grid-column: 1;
+        grid-row: 1 / 4;
+        align-self: center;
+        max-height: 65px;
+      }
+
+      .footer-tagline { grid-column: 2; grid-row: 1; }
+      .footer-nav     { grid-column: 2; grid-row: 2; }
+      .footer-copy    { grid-column: 2; grid-row: 3; }
+    }
+
+    /* Mobile/tablet: hide desktop-only elements */
+    .intro-feature-img {
+      display: none;
+    }
+
+    .intro-desktop-wrap {
+      display: contents;
+    }
+
+    @media (min-width: 1024px) {
+      .intro-feature-img { display: block; }
+      .intro-desktop-wrap { display: grid; }
+    }
+  </style>
 </head>
 <body>
 
@@ -28,75 +230,102 @@
 
   <header>
     <nav class="topbar">
+      <!-- Mobile: hamburger -->
       <svg class="hamburger" id="hamburgerBtn" xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30">
         <line x1="5" y1="7"  x2="25" y2="7"  stroke="white" stroke-width="2" stroke-linecap="round"/>
         <line x1="5" y1="15" x2="25" y2="15" stroke="white" stroke-width="2" stroke-linecap="round"/>
         <line x1="5" y1="23" x2="25" y2="23" stroke="white" stroke-width="2" stroke-linecap="round"/>
       </svg>
+
       <img class="logo" src="img/logo.png" alt="Vlam en Vlees Logo">
+
+      <!-- Tablet/Desktop: horizontal nav -->
+      <nav class="desktop-nav">
+        <a href="menu.html">menu</a>
+        <a href="openingstijden.html">openingstijden</a>
+        <a href="vacature.html">vacature</a>
+        <a href="reserveer.html" class="nav-cta">reserveren</a>
+      </nav>
     </nav>
+
     <div class="hero-wrapper">
-      <img class="hero" src="img/homepage4.png" alt="Gegrild vlees">
+      <img class="hero hero-hide-desktop" src="img/homepage4.png" alt="Gegrild vlees">
     </div>
   </header>
 
-  <section class="intro">
-    <h2 class="section-title">ulam en vlees</h2>
-    <p class="intro-text">
-      <span class="accent">Vlam</span> &amp; <span class="accent">Vlees</span>: Meesters in
-      <span class="accent">vuur</span> en <span class="accent">smaak</span>.<br>
-      Van vlijmscherp gegrilde steaks tot low &amp; slow klassiekers.
-      Wij combineren vakmanschap met de beste cuts voor een
-      onvergetelijke, rokerige smaakbeleving.
-    </p>
-  </section>
+  <main>
+    <!-- Desktop: intro + image side-by-side; Mobile: stacked -->
+    <div class="intro-desktop-wrap">
+      <section class="intro">
+        <h2 class="section-title">vlam en vlees</h2>
+        <p class="intro-text">
+          <span class="accent">Vlam</span> &amp; <span class="accent">Vlees</span>: Meesters in
+          <span class="accent">vuur</span> en <span class="accent">smaak</span>.<br>
+          Van vlijmscherp gegrilde steaks tot low &amp; slow klassiekers.
+          Wij combineren vakmanschap met de beste cuts voor een
+          onvergetelijke, rokerige smaakbeleving.
+        </p>
+      </section>
 
-  <section class="categories">
-    <div class="divider-row">
-      <span class="divider-line"></span>
-      <h2 class="section-title cat-title">categorieen</h2>
-      <span class="divider-line"></span>
+      <!-- Only visible on desktop (hidden via CSS on mobile/tablet) -->
+      <img
+        class="intro-feature-img"
+        src="img/homepage4.png"
+        alt="Gegrild vlees op een plank"
+      >
     </div>
 
-    <div class="cat-grid">
-      <article class="cat-card">
-        <a href="menu.html?cat=barbeque">
-          <div class="cat-img-wrap">
-            <img src="img/barbeque.png" alt="Barbeque">
-          </div>
-          <p class="cat-label">barbeque</p>
-        </a>
-      </article>
+    <div class="categories-wrap">
+      <section class="categories">
+        <div class="divider-row">
+          <span class="divider-line"></span>
+          <h2 class="section-title cat-title">categorieen</h2>
+          <span class="divider-line"></span>
+        </div>
 
-      <article class="cat-card">
-        <a href="menu.html?cat=drank">
-          <div class="cat-img-wrap">
-            <img src="img/drank.png" alt="Drank">
-          </div>
-          <p class="cat-label">drank</p>
-        </a>
-      </article>
+        <div class="cat-grid">
+          <article class="cat-card">
+            <a href="menu.html?cat=barbeque">
+              <div class="cat-img-wrap">
+                <img src="img/barbeque.png" alt="Barbeque">
+              </div>
+              <p class="cat-label">barbeque</p>
+            </a>
+          </article>
 
-      <article class="cat-card">
-        <a href="menu.html?cat=toetjes">
-          <div class="cat-img-wrap">
-            <img src="img/toetjes.png" alt="Toetjes">
-          </div>
-          <p class="cat-label">toetjes</p>
-        </a>
-      </article>
+          <article class="cat-card">
+            <a href="menu.html?cat=drank">
+              <div class="cat-img-wrap">
+                <img src="img/drank.png" alt="Drank">
+              </div>
+              <p class="cat-label">drank</p>
+            </a>
+          </article>
+
+          <article class="cat-card">
+            <a href="menu.html?cat=toetjes">
+              <div class="cat-img-wrap">
+                <img src="img/toetjes.png" alt="Toetjes">
+              </div>
+              <p class="cat-label">toetjes</p>
+            </a>
+          </article>
+        </div>
+      </section>
     </div>
-  </section>
+  </main>
 
   <footer>
-    <img class="footer-logo" src="img/logo.png" alt="Vlam en Vlees">
-    <p class="footer-tagline">Meesters in vuur &amp; smaak — Zoetermeer</p>
-    <nav class="footer-nav">
-      <a href="menu.html">Menu</a>
-      <a href="reserveer.html">Reserveren</a>
-      <a href="#">Contact</a>
-    </nav>
-    <p class="footer-copy">&copy; 2026 Vlam &amp; Vlees. Alle rechten voorbehouden.</p>
+    <div class="footer-inner">
+      <img class="footer-logo" src="img/logo.png" alt="Vlam en Vlees">
+      <p class="footer-tagline">Meesters in vuur &amp; smaak — Zoetermeer</p>
+      <nav class="footer-nav">
+        <a href="menu.html">Menu</a>
+        <a href="reserveer.html">Reserveren</a>
+        <a href="#">Contact</a>
+      </nav>
+      <p class="footer-copy">&copy; 2026 Vlam &amp; Vlees. Alle rechten voorbehouden.</p>
+    </div>
   </footer>
 
   <script src="lib/burger-menu.js"></script>
