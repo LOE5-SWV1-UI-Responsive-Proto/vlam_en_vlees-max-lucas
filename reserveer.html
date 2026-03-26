@@ -34,35 +34,45 @@
         <line x1="5" y1="23" x2="25" y2="23" stroke="white" stroke-width="2" stroke-linecap="round"/>
       </svg>
       <img class="logo" src="img/logo.png" alt="Vlam en Vlees Logo">
+      <nav class="desktop-nav">
+        <a href="menu.html">menu</a>
+        <a href="openingstijden.html">openingstijden</a>
+        <a href="vacature.html">vacature</a>
+        <a href="reserveer.html" class="nav-cta">reserveren</a>
+      </nav>
     </nav>
     <img class="res-hero" src="img/restaurant-binnenkant.png" alt="Restaurant Vlam en Vlees">
   </header>
 
-  <section class="res-form-sectie">
-    <div class="res-velden">
-      <input class="res-veld" type="text" placeholder="Naam">
-      <input class="res-veld" type="number" placeholder="hoeveelheid" min="1" max="20">
-      <input class="res-veld" type="datetime-local" id="tijdInput">
-    </div>
-    <button class="res-knop">aanbetaling</button>
-  </section>
+  <main>
+    <section class="res-form-sectie">
+      <div class="res-velden">
+        <input class="res-veld" type="text" placeholder="Naam">
+        <input class="res-veld" type="number" placeholder="hoeveelheid" min="1" max="20">
+        <input class="res-veld" type="datetime-local" id="tijdInput">
+      </div>
+      <button class="res-knop">aanbetaling</button>
+    </section>
 
-  <section class="res-uitleg">
-    <h2>waarom vragen wij om geld?</h2>
-    <p>
-      het is vaak voorkomend dat mensen die reserveren niet komen opdagen, hiervoor hebben we een no-show garantie systeem. vrees je niet, dit gaat uiteindelijk van je eindkosten af
-    </p>
-  </section>
+    <section class="res-uitleg">
+      <h2>waarom vragen wij om geld?</h2>
+      <p>
+        het is vaak voorkomend dat mensen die reserveren niet komen opdagen, hiervoor hebben we een no-show garantie systeem. vrees je niet, dit gaat uiteindelijk van je eindkosten af
+      </p>
+    </section>
+  </main>
 
   <footer>
-    <img class="footer-logo" src="img/logo.png" alt="Vlam en Vlees">
-    <p class="footer-tagline">Meesters in vuur &amp; smaak — Zoetermeer</p>
-    <nav class="footer-nav">
-      <a href="menu.html">Menu</a>
-      <a href="reserveer.html">Reserveren</a>
-      <a href="#">Contact</a>
-    </nav>
-    <p class="footer-copy">&copy; 2026 Vlam &amp; Vlees. Alle rechten voorbehouden.</p>
+    <div class="footer-inner">
+      <img class="footer-logo" src="img/logo.png" alt="Vlam en Vlees">
+      <p class="footer-tagline">Meesters in vuur &amp; smaak — Zoetermeer</p>
+      <nav class="footer-nav">
+        <a href="menu.html">Menu</a>
+        <a href="reserveer.html">Reserveren</a>
+        <a href="#">Contact</a>
+      </nav>
+      <p class="footer-copy">&copy; 2026 Vlam &amp; Vlees. Alle rechten voorbehouden.</p>
+    </div>
   </footer>
 
   <script src="lib/burger-menu.js"></script>
