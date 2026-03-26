@@ -1,59 +1,83 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="nl">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="description" content="De pagina voor de openingstijden en locatie het restaurant Vlam en Vlees">
-    <meta name="keywords" content="Locatie, Openingstijden, Zoetermeer, Email, Maandag, Dinsdag, Woensdag, Donderdag, Vrijdag, Zaterdag, Zondag">
-    <meta name="author" content="Max Slotboom">
-    <title>Openingstijden - Vlam en Vlees</title>
-    <link rel="stylesheet" href="css/max.css">
-    <script src="lib/"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="De pagina voor de openingstijden en locatie het restaurant Vlam en Vlees">
+  <meta name="keywords" content="Locatie, Openingstijden, Zoetermeer, Email, Maandag, Dinsdag, Woensdag, Donderdag, Vrijdag, Zaterdag, Zondag">
+  <meta name="author" content="Max Slotboom">
+  <title>Openingstijden - Vlam en Vlees</title>
+  <link rel="stylesheet" href="css/lucas.css">
 </head>
-<body>
-    <header>
-        <svg class="hamburger" xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30">
-            <line x1="5" y1="7" x2="25" y2="7" stroke="white" stroke-width="2" stroke-linecap="round"/>
-            <line x1="5" y1="15" x2="25" y2="15" stroke="white" stroke-width="2" stroke-linecap="round"/>
-            <line x1="5" y1="23" x2="25" y2="23" stroke="white" stroke-width="2" stroke-linecap="round"/>
-        </svg>
-        <a href="index.html"><img src="img/logo.png"></a>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="menu.html">Menu</a>
-            <a href="openingstijden.html">Openingstijden</a>
-            <a href="reserveer.html">Reserveer</a>
-            <a href="vacatures.html">Vacatures</a>
-        </nav>
-    </header>
-    <main>
-        
-        <section>
-            <h3>Openingstijden:</h3><br>
-            <p>Maandag 9:00-23:00<br>
-            Dinsdag 9:00-23:00<br>
-            Woensdag 9:00-23:00<br>
-            Donderdag 9:00-23:00<br>
-            Vrijdag 9:00-23:00<br>
-            Zaterdag 9:00-23:00<br>
-            Zondag 9:00-23:00<br></p>
-        </section>
-        
-        <section>
-            <h3>Adres:</h3><br>
-            <p>Pomenade 12
-            711 AR
-            Zoetermeer</p>
-        </section>
-        
-        <section>
-            <h3>E-Mail (voor bij bijzonderheden):</h3><br>
-            <p>info@flamenvleeszoetermeer.nl</p>
-        </section>
-    </main>
-    <footer>
-        <p>contact@vlamenvlees.nl</p>
-    </footer>
+<body class="max-page">
+
+  <div class="nav-overlay" id="navOverlay"></div>
+
+  <aside class="nav-drawer" id="navDrawer">
+    <button class="nav-close" id="navClose" aria-label="Sluiten">
+      <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22">
+        <line x1="3" y1="3" x2="19" y2="19" stroke="white" stroke-width="2" stroke-linecap="round"/>
+        <line x1="19" y1="3" x2="3" y2="19" stroke="white" stroke-width="2" stroke-linecap="round"/>
+      </svg>
+    </button>
+    <nav class="nav-drawer-links">
+      <a href="index.html">landingspagina</a>
+      <a href="menu.html">menu</a>
+      <a href="vacature.html">vacature</a>
+      <a href="reserveer.html">reserveren</a>
+      <a href="openingstijden.html">openingstijden</a>
+    </nav>
+  </aside>
+
+  <header>
+    <nav class="topbar">
+      <svg class="hamburger" id="hamburgerBtn" xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30">
+        <line x1="5" y1="7"  x2="25" y2="7"  stroke="white" stroke-width="2" stroke-linecap="round"/>
+        <line x1="5" y1="15" x2="25" y2="15" stroke="white" stroke-width="2" stroke-linecap="round"/>
+        <line x1="5" y1="23" x2="25" y2="23" stroke="white" stroke-width="2" stroke-linecap="round"/>
+      </svg>
+      <img class="logo" src="img/logo.png" alt="Vlam en Vlees Logo">
+    </nav>
+    <div class="hero-wrapper">
+      <!-- <img class="hero" src="img/homepage4.png" alt="Gegrild vlees"> -->
+    </div>
+  </header>
+
+  <main>
+    <section>
+      <h3>Openingstijden:</h3><br>
+      <p>Maandag 9:00-23:00<br>
+      Dinsdag 9:00-23:00<br>
+      Woensdag 9:00-23:00<br>
+      Donderdag 9:00-23:00<br>
+      Vrijdag 9:00-23:00<br>
+      Zaterdag 9:00-23:00<br>
+      Zondag 9:00-23:00</p>
+    </section>
+
+    <section>
+      <h3>Adres:</h3><br>
+      <p>Pomenade 12 711 AR Zoetermeer</p>
+    </section>
+
+    <section>
+      <h3>E-Mail (voor bij bijzonderheden):</h3><br>
+      <p>info@flamenvleeszoetermeer.nl</p>
+    </section>
+  </main>
+
+  <footer>
+    <img class="footer-logo" src="img/logo.png" alt="Vlam en Vlees">
+    <p class="footer-tagline">Meesters in vuur &amp; smaak — Zoetermeer</p>
+    <nav class="footer-nav">
+      <a href="menu.html">Menu</a>
+      <a href="reserveer.html">Reserveren</a>
+      <a href="#">Contact</a>
+    </nav>
+    <p class="footer-copy">&copy; 2026 Vlam &amp; Vlees. Alle rechten voorbehouden.</p>
+  </footer>
+
+  <script src="lib/burger-menu.js"></script>
 </body>
 </html>

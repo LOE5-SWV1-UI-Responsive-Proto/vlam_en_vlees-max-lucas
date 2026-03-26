@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inria+Serif:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Oswald:wght@200..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inria+Serif:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Oswald:wght@200..700&family=Inder&family=Jockey+One&display=swap');
 
 :root {
   --zwart: #0d0d0d;
@@ -7,6 +7,8 @@
   --font-display: 'Bebas Neue', sans-serif;
   --font-body: 'Inria Serif', serif;
   --font-label: 'Oswald', sans-serif;
+  --font-max-heading: 'Jockey One', sans-serif;
+  --font-max-body: 'Inder', sans-serif;
   --radius: 6px;
 }
 
@@ -35,6 +37,10 @@ body.no-scroll {
 
 img {
   display: block;
+}
+
+main {
+  background-color: var(--wit);
 }
 
 /* ── NAV DRAWER ── */
@@ -140,6 +146,7 @@ header {
 
 .hero-wrapper {
   position: relative;
+  line-height: 0;
 }
 
 .hero {
@@ -147,6 +154,47 @@ header {
   height: 220px;
   object-fit: cover;
   object-position: center 30%;
+}
+
+/* ── MAX PAGES: generic styles ── */
+
+.max-page {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.max-page main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.max-page h1 {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+  align-items: center;
+  padding: 35px 0 50px;
+  font-family: var(--font-max-heading);
+}
+
+.max-page p {
+  font-family: var(--font-max-body);
+}
+
+.max-page section {
+  display: grid;
+  grid-auto-rows: max-content;
+  justify-items: center;
+  align-items: center;
+  padding-bottom: 25px;
+  font-family: var(--font-max-heading);
+}
+
+.max-page span {
+  color: #922C06;
 }
 
 /* ── INDEX: INTRO ── */
@@ -400,6 +448,98 @@ footer {
   transition: background-color 0.2s, color 0.2s;
 }
 
+.salaris-resultaat {
+  margin-top: 14px;
+  font-family: var(--font-label);
+  font-size: 0.95rem;
+  color: var(--rood);
+  min-height: 1.4rem;
+  letter-spacing: 0.04em;
+}
+
+/* ── RESERVEREN ── */
+
+.res-hero {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  object-position: center 40%;
+}
+
+.res-form-sectie {
+  padding: 24px 20px 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.res-velden {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+.res-veld {
+  font-family: var(--font-label);
+  font-size: 0.95rem;
+  letter-spacing: 0.03em;
+  background-color: #e0dbd5;
+  border: none;
+  border-radius: var(--radius);
+  padding: 14px 18px;
+  color: var(--zwart);
+  width: 100%;
+  outline: none;
+}
+
+.res-veld::placeholder {
+  color: var(--zwart);
+  opacity: 1;
+}
+
+.res-veld[type="datetime-local"] {
+  color: var(--zwart);
+}
+
+.res-knop {
+  font-family: var(--font-label);
+  font-size: 0.95rem;
+  letter-spacing: 0.04em;
+  background-color: #e0dbd5;
+  border: none;
+  border-radius: var(--radius);
+  padding: 14px 42px;
+  color: var(--zwart);
+  cursor: pointer;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+.res-knop:hover {
+  background-color: var(--rood);
+  color: var(--wit);
+}
+
+.res-uitleg {
+  padding: 28px 20px 48px;
+  text-align: center;
+}
+
+.res-uitleg h2 {
+  font-family: var(--font-label);
+  font-weight: 700;
+  font-size: 1.3rem;
+  margin-bottom: 14px;
+}
+
+.res-uitleg p {
+  font-family: var(--font-body);
+  font-size: 0.92rem;
+  line-height: 1.75;
+  color: #1a1a1a;
+}
+
 /* ── TABLET ≥ 768px ── */
 
 @media (min-width: 768px) {
@@ -412,6 +552,10 @@ footer {
   }
 
   .vac-hero {
+    height: 340px;
+  }
+
+  .res-hero {
     height: 340px;
   }
 
@@ -440,6 +584,18 @@ footer {
     max-width: 380px;
     margin: 0 auto;
   }
+
+  .res-form-sectie {
+    max-width: 480px;
+    margin: 0 auto;
+    padding: 32px 0 8px;
+  }
+
+  .res-uitleg {
+    max-width: 480px;
+    margin: 0 auto;
+    padding: 28px 0 60px;
+  }
 }
 
 /* ── DESKTOP ≥ 1024px ── */
@@ -450,6 +606,10 @@ footer {
   }
 
   .vac-hero {
+    height: 420px;
+  }
+
+  .res-hero {
     height: 420px;
   }
 

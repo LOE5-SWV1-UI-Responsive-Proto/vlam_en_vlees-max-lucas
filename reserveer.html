@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Vacatures – Vlam & Vlees</title>
+  <title>Reserveren – Vlam & Vlees</title>
   <link rel="stylesheet" href="css/lucas.css">
 </head>
 <body>
@@ -35,28 +35,23 @@
       </svg>
       <img class="logo" src="img/logo.png" alt="Vlam en Vlees Logo">
     </nav>
-    <img class="vac-hero" src="img/werkplek.png" alt="Het team van Vlam en Vlees">
+    <img class="res-hero" src="img/restaurant-binnenkant.png" alt="Restaurant Vlam en Vlees">
   </header>
 
-  <section class="vac-content">
-    <h1>komen werken?</h1>
-    <p>
-      Wij zijn opzoek naar jonge en fitte mensen die een vrij lege schema hebben en graag ervaring willen opbouwen.
-    </p>
-    <p>
-      je kunt soliciteren door een e-mail te sturen naar
-      <a href="mailto:xxx@gmail.com">xxx@gmail.com</a>
-      of fysiek naar onze vesteging toe te gaan.
-    </p>
+  <section class="res-form-sectie">
+    <div class="res-velden">
+      <input class="res-veld" type="text" placeholder="Naam">
+      <input class="res-veld" type="number" placeholder="hoeveelheid" min="1" max="20">
+      <input class="res-veld" type="datetime-local" id="tijdInput">
+    </div>
+    <button class="res-knop">aanbetaling</button>
   </section>
 
-  <section class="salaris-sectie">
-    <h2>salaris berekenen</h2>
-    <div class="salaris-rij">
-      <input class="salaris-veld" id="leeftijdInput" type="number" placeholder="leeftijd" min="15" max="99">
-      <input class="salaris-eenheid" id="urenInput" type="number" placeholder="u" min="1" max="60">
-    </div>
-    <div class="salaris-knop" id="salarisResultaat">salaris</div>
+  <section class="res-uitleg">
+    <h2>waarom vragen wij om geld?</h2>
+    <p>
+      het is vaak voorkomend dat mensen die reserveren niet komen opdagen, hiervoor hebben we een no-show garantie systeem. vrees je niet, dit gaat uiteindelijk van je eindkosten af
+    </p>
   </section>
 
   <footer>
@@ -71,6 +66,5 @@
   </footer>
 
   <script src="lib/burger-menu.js"></script>
-  <script src="lib/vacature.js"></script>
 </body>
 </html>
