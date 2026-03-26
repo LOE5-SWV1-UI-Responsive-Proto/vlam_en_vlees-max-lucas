@@ -518,6 +518,42 @@ footer {
   letter-spacing: 0.04em;
 }
 
+/* locatie / openingstijden */
+
+.loc-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 0 24px 32px;
+}
+
+.loc-grid section {
+  text-align: center;
+}
+
+.loc-grid h3 {
+  font-family: var(--font-label);
+  font-weight: 700;
+  font-size: 1.05rem;
+  letter-spacing: 0.04em;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+  margin-bottom: 8px;
+}
+
+.loc-grid p {
+  font-family: var(--font-max-body);
+  font-size: 0.92rem;
+  line-height: 1.7;
+  color: #1a1a1a;
+  margin-bottom: 6px;
+}
+
+.loc-grid a {
+  color: var(--rood);
+  text-decoration: none;
+}
+
 /* reserveren */
 
 .res-hero {
@@ -857,4 +893,31 @@ footer {
   .menu-desserts      { grid-column: 3; grid-row: 2; padding-left: 40px; }
   .menu-drankjes      { grid-column: 3; grid-row: 3; padding-left: 40px; }
   .menu-allergie      { grid-column: 1 / -1; grid-row: 5; justify-self: center; text-align: center; }
+
+  /* openingstijden desktop: override menu grid */
+
+  .max-page main:has(.loc-grid) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 48px 48px;
+  }
+
+  .max-page main:has(.loc-grid) h1 {
+    padding: 40px 0 32px;
+  }
+
+  .loc-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px 80px;
+    padding: 0;
+    max-width: 640px;
+  }
+
+  .loc-grid section {
+    text-align: center;
+  }
 }
