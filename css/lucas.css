@@ -60,6 +60,20 @@ body.large-text {
   font-size: 1.2em;
 }
 
+body.high-contrast {
+  background-color: black;
+  color: yellow;
+}
+
+body.high-contrast a {
+  color: cyan;
+}
+
+body.high-contrast header,
+body.high-contrast footer {
+  background-color: black;
+}
+
 img {
   display: block;
 }
