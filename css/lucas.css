@@ -39,7 +39,16 @@ body.dark-mode {
   color: var(--wit);
   --zwart: var(--wit);
 }
+
 body.dark-mode main {
+  background-color: var(--dark_mode);
+}
+
+body.dark-mode header {
+  background-color: var(--dark_mode);
+}
+
+body.dark-mode footer {
   background-color: var(--dark_mode);
 }
 
