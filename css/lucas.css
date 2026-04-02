@@ -37,8 +37,8 @@ body {
 body.dark-mode {
   background-color: var(--dark_mode);
   color: var(--wit);
+  --zwart: var(--wit);
 }
-
 body.dark-mode main {
   background-color: var(--dark_mode);
 }
