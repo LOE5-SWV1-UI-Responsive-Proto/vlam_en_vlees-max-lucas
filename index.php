@@ -19,7 +19,7 @@
     </button>
     <nav class="nav-drawer-links">
       <a href="index.html">landingspagina</a>
-      <a href="menu.html">menu</a>
+      <a href="menu.php">menu</a>
       <a href="vacature.html">vacature</a>
       <a href="reserveer.html">reserveren</a>
       <a href="openingstijden.html">openingstijden</a>
