@@ -4,6 +4,7 @@
   --zwart: #0d0d0d;
   --wit: #f5f0eb;
   --rood: #c0392b;
+  --dark_mode: #202020; 
   --font-display: 'Bebas Neue', sans-serif;
   --font-body: 'Inria Serif', serif;
   --font-label: 'Oswald', sans-serif;
@@ -33,8 +34,44 @@ body {
   flex-direction: column;
 }
 
+body.dark-mode {
+  background-color: var(--dark_mode);
+  color: var(--wit);
+  --zwart: var(--wit);
+}
+
+body.dark-mode main {
+  background-color: var(--dark_mode);
+}
+
+body.dark-mode header {
+  background-color: var(--dark_mode);
+}
+
+body.dark-mode footer {
+  background-color: var(--dark_mode);
+}
+
 body.no-scroll {
   overflow: hidden;
+}
+
+body.large-text {
+  font-size: 1.2em;
+}
+
+body.high-contrast {
+  background-color: black;
+  color: yellow;
+}
+
+body.high-contrast a {
+  color: cyan;
+}
+
+body.high-contrast header,
+body.high-contrast footer {
+  background-color: black;
 }
 
 img {
@@ -42,7 +79,7 @@ img {
 }
 
 main {
-  background-color: var(--wit);
+  background-color: inherit;
   flex: 1;
 }
 
@@ -268,7 +305,7 @@ header {
 .intro-text {
   font-size: 0.92rem;
   line-height: 1.7;
-  color: #1a1a1a;
+  color: var(--zwart);
 }
 
 .intro-text .accent {
@@ -299,7 +336,7 @@ header {
 .divider-line {
   flex: 1;
   height: 1.5px;
-  background-color: #1a1a1a;
+  background-color: var(--zwart);
 }
 
 .cat-title {
@@ -427,7 +464,7 @@ footer {
   font-family: var(--font-body);
   font-size: 0.92rem;
   line-height: 1.75;
-  color: #1a1a1a;
+  color: var(--zwart);
   margin-bottom: 18px;
 }
 
@@ -545,7 +582,7 @@ footer {
   font-family: var(--font-max-body);
   font-size: 0.92rem;
   line-height: 1.7;
-  color: #1a1a1a;
+  color: var(--zwart);
   margin-bottom: 6px;
 }
 
@@ -638,7 +675,7 @@ footer {
   font-family: var(--font-body);
   font-size: 0.92rem;
   line-height: 1.75;
-  color: #1a1a1a;
+  color: var(--zwart);
 }
 
 /* tablet */
@@ -933,4 +970,37 @@ footer {
   .loc-grid section {
     text-align: center;
   }
+}
+
+.access_options {
+  display: flex !important;
+  flex-direction: row !important;
+  justify-content: flex-end;
+  align-items: center !important;
+  gap: 10px;
+  flex-wrap: nowrap;
+  width: auto;
+}
+
+.access_options button {
+  font-family: var(--font-label);
+  font-size: 0.92rem;
+  font-weight: 400;
+  letter-spacing: 0.07em;
+  text-transform: lowercase;
+
+  color: rgba(255,255,255,0.82);
+  background: none;
+  border: none;
+  cursor: pointer;
+
+  padding: 8px 14px;
+  border-radius: var(--radius);
+
+  transition: color 0.2s, background-color 0.2s;
+}
+
+.access_options button:hover {
+  color: var(--wit);
+  background-color: rgba(255,255,255,0.08);
 }
