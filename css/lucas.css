@@ -980,6 +980,7 @@ footer {
   gap: 10px;
   flex-wrap: nowrap;
   width: auto;
+  padding-right: 300px;
 }
 
 .access_options button {

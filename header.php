@@ -8,11 +8,11 @@
       </svg>
     </button>
     <nav class="nav-drawer-links">
-      <a href="index.html">landingspagina</a>
-      <a href="menu.html">menu</a>
-      <a href="vacature.html">vacature</a>
-      <a href="reserveer.html">reserveren</a>
-      <a href="openingstijden.html">openingstijden</a>
+      <a href="index.php">landingspagina</a>
+      <a href="menu.php">menu</a>
+      <a href="vacature.php">vacature</a>
+      <a href="reserveer.php">reserveren</a>
+      <a href="openingstijden.php">openingstijden</a>
     </nav>
   </aside>
 
@@ -26,10 +26,10 @@
         <img class="logo" src="img/logo.png" alt="Vlam en Vlees Logo">
       </a>
       <nav class="desktop-nav">
-        <a href="index.html">landingspagina</a>
-        <a href="menu.html">menu</a>
-        <a href="openingstijden.html">openingstijden</a>
-        <a href="vacature.html">vacature</a>
-        <a href="reserveer.html" class="nav-cta">reserveren</a>
+        <a href="index.php">landingspagina</a>
+        <a href="menu.php">menu</a>
+        <a href="openingstijden.php">openingstijden</a>
+        <a href="vacature.php">vacature</a>
+        <a href="reserveer.php" class="nav-cta">reserveren</a>
       </nav>
     </nav>
