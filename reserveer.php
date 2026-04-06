@@ -3,14 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="description" content="De pagina voor de openingstijden en locatie het restaurant Vlam en Vlees">
-  <meta name="keywords" content="Locatie, Openingstijden, Zoetermeer, Email, Maandag, Dinsdag, Woensdag, Donderdag, Vrijdag, Zaterdag, Zondag">
-  <meta name="author" content="Max Slotboom">
-  <title>Openingstijden - Vlam en Vlees</title>
+  <title>Reserveren – Vlam & Vlees</title>
   <link rel="stylesheet" href="css/lucas.css">
 </head>
-<body class="max-page">
+<body>
 
   <div class="nav-overlay" id="navOverlay"></div>
 
@@ -49,52 +45,31 @@
       </nav>
     </nav>
 
+    <img class="res-hero" src="img/restaurant-binnenkant.png" alt="Restaurant Vlam en Vlees">
   </header>
 
   <main>
-    <h1>Locatie en gegevens</h1>
+    <h1 class="res-heading">Reserveer Nu!</h1>
 
-    <div class="loc-grid">
-      <section class="loc-vestiging">
-        <h3>Vestiging</h3>
-        <p>Pomenade 12<br>2711 AR Zoetermeer</p>
-      </section>
+    <section class="res-form-sectie">
+      <div class="res-velden">
+        <input class="res-veld" type="text" placeholder="Naam">
+        <input class="res-veld" type="number" placeholder="hoeveelheid" min="1" max="20">
+        <input class="res-veld" type="datetime-local" id="tijdInput">
+      </div>
+      <button class="res-knop">aanbetaling</button>
+    </section>
 
-      <section class="loc-tijden">
-        <h3>Openingstijden</h3>
-        <p>Maandag 9:00–23:00<br>
-        Dinsdag 9:00–23:00<br>
-        Woensdag 9:00–23:00<br>
-        Donderdag 9:00–23:00<br>
-        Vrijdag 9:00–23:00<br>
-        Zaterdag 9:00–23:00<br>
-        Zondag 9:00–23:00</p>
-      </section>
-
-      <section class="loc-contact">
-        <h3>Contact</h3>
-        <p>Telefoon:<br>088-1321111</p>
-        <p>Email:<br>info@flamenvleeszoetermeer.nl</p>
-      </section>
-
-      <section class="loc-uitzonderingen">
-        <h3>Uitzonderingen</h3>
-        <p>In het geval dat je de restaurant gedurende tijd voor jezelf wilt huren kun je ons mailen via <a href="mailto:xxx@gmail.com">xxx@gmail.com</a></p>
-      </section>
-    </div>
+    <section class="res-uitleg">
+      <h2>waarom vragen wij om geld?</h2>
+      <p>
+        het is vaak voorkomend dat mensen die reserveren niet komen opdagen, hiervoor hebben we een no-show garantie systeem. vrees je niet, dit gaat uiteindelijk van je eindkosten af
+      </p>
+    </section>
   </main>
 
   <footer>
-    <div class="footer-inner">
-      <img class="footer-logo" src="img/logo.png" alt="Vlam en Vlees">
-      <p class="footer-tagline">Meesters in vuur &amp; smaak — Zoetermeer</p>
-      <nav class="footer-nav">
-        <a href="menu.html">Menu</a>
-        <a href="reserveer.html">Reserveren</a>
-        <a href="openingstijden.html">Contact</a>
-      </nav>
-      <p class="footer-copy">&copy; 2026 Vlam &amp; Vlees. Alle rechten voorbehouden.</p>
-    </div>
+    <?php include 'footer.php'; ?>
   </footer>
 
   <script src="lib/burger-menu.js"></script>

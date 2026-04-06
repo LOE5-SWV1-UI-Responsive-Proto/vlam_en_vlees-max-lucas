@@ -19,7 +19,7 @@
     </button>
     <nav class="nav-drawer-links">
       <a href="index.html">landingspagina</a>
-      <a href="menu.html">menu</a>
+      <a href="menu.php">menu</a>
       <a href="vacature.html">vacature</a>
       <a href="reserveer.html">reserveren</a>
       <a href="openingstijden.html">openingstijden</a>
@@ -108,16 +108,7 @@
   </main>
 
   <footer>
-    <div class="footer-inner">
-      <img class="footer-logo" src="img/logo.png" alt="Vlam en Vlees">
-      <p class="footer-tagline">Meesters in vuur &amp; smaak — Zoetermeer</p>
-      <nav class="footer-nav">
-        <a href="menu.html">Menu</a>
-        <a href="reserveer.html">Reserveren</a>
-        <a href="openingstijden.html">Contact</a>
-      </nav>
-      <p class="footer-copy">&copy; 2026 Vlam &amp; Vlees. Alle rechten voorbehouden.</p>
-    </div>
+    <?php include 'footer.php'; ?>
   </footer>
 
   <script src="lib/burger-menu.js"></script>

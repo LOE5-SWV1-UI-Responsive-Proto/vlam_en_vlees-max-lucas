@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Reserveren – Vlam & Vlees</title>
+  <title>Vacatures – Vlam & Vlees</title>
   <link rel="stylesheet" href="css/lucas.css">
 </head>
 <body>
@@ -45,42 +45,42 @@
       </nav>
     </nav>
 
-    <img class="res-hero" src="img/restaurant-binnenkant.png" alt="Restaurant Vlam en Vlees">
+    <!-- mobile/tablet: full-bleed hero -->
+    <img class="vac-hero" src="img/werkplek.png" alt="Het team van Vlam en Vlees">
   </header>
 
   <main>
-    <h1 class="res-heading">Reserveer Nu!</h1>
-
-    <section class="res-form-sectie">
-      <div class="res-velden">
-        <input class="res-veld" type="text" placeholder="Naam">
-        <input class="res-veld" type="number" placeholder="hoeveelheid" min="1" max="20">
-        <input class="res-veld" type="datetime-local" id="tijdInput">
-      </div>
-      <button class="res-knop">aanbetaling</button>
+    <section class="vac-content">
+      <h1>komen werken?</h1>
+      <!-- desktop only: centered contained image -->
+      <img class="vac-hero-desktop" src="img/werkplek.png" alt="Het team van Vlam en Vlees">
+      <p>
+        Wij zijn opzoek naar jonge en fitte mensen die een vrij lege schema hebben en graag ervaring willen opbouwen.
+      </p>
+      <p>
+        je kunt soliciteren door een e-mail te sturen naar
+        <a href="mailto:xxx@gmail.com">xxx@gmail.com</a>
+        of fysiek naar onze vesteging toe te gaan.
+      </p>
     </section>
 
-    <section class="res-uitleg">
-      <h2>waarom vragen wij om geld?</h2>
-      <p>
-        het is vaak voorkomend dat mensen die reserveren niet komen opdagen, hiervoor hebben we een no-show garantie systeem. vrees je niet, dit gaat uiteindelijk van je eindkosten af
-      </p>
+    <section class="salaris-sectie">
+      <h2>salaris berekenen</h2>
+      <div class="salaris-inputs">
+        <div class="salaris-rij">
+          <input class="salaris-veld" id="leeftijdInput" type="number" placeholder="leeftijd" min="15" max="99">
+          <input class="salaris-eenheid" id="urenInput" type="number" placeholder="u" min="1" max="60">
+        </div>
+        <div class="salaris-knop" id="salarisResultaat">salaris</div>
+      </div>
     </section>
   </main>
 
   <footer>
-    <div class="footer-inner">
-      <img class="footer-logo" src="img/logo.png" alt="Vlam en Vlees">
-      <p class="footer-tagline">Meesters in vuur &amp; smaak — Zoetermeer</p>
-      <nav class="footer-nav">
-        <a href="menu.html">Menu</a>
-        <a href="reserveer.html">Reserveren</a>
-        <a href="openingstijden.html">Contact</a>
-      </nav>
-      <p class="footer-copy">&copy; 2026 Vlam &amp; Vlees. Alle rechten voorbehouden.</p>
-    </div>
+    <?php include 'footer.php'; ?>
   </footer>
 
   <script src="lib/burger-menu.js"></script>
+  <script src="lib/vacature.js"></script>
 </body>
 </html>

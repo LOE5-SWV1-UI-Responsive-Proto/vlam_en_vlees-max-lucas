@@ -3,10 +3,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Vacatures – Vlam & Vlees</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="De pagina voor de openingstijden en locatie het restaurant Vlam en Vlees">
+  <meta name="keywords" content="Locatie, Openingstijden, Zoetermeer, Email, Maandag, Dinsdag, Woensdag, Donderdag, Vrijdag, Zaterdag, Zondag">
+  <meta name="author" content="Max Slotboom">
+  <title>Openingstijden - Vlam en Vlees</title>
   <link rel="stylesheet" href="css/lucas.css">
 </head>
-<body>
+<body class="max-page">
 
   <div class="nav-overlay" id="navOverlay"></div>
 
@@ -45,51 +49,45 @@
       </nav>
     </nav>
 
-    <!-- mobile/tablet: full-bleed hero -->
-    <img class="vac-hero" src="img/werkplek.png" alt="Het team van Vlam en Vlees">
   </header>
 
   <main>
-    <section class="vac-content">
-      <h1>komen werken?</h1>
-      <!-- desktop only: centered contained image -->
-      <img class="vac-hero-desktop" src="img/werkplek.png" alt="Het team van Vlam en Vlees">
-      <p>
-        Wij zijn opzoek naar jonge en fitte mensen die een vrij lege schema hebben en graag ervaring willen opbouwen.
-      </p>
-      <p>
-        je kunt soliciteren door een e-mail te sturen naar
-        <a href="mailto:xxx@gmail.com">xxx@gmail.com</a>
-        of fysiek naar onze vesteging toe te gaan.
-      </p>
-    </section>
+    <h1>Locatie en gegevens</h1>
 
-    <section class="salaris-sectie">
-      <h2>salaris berekenen</h2>
-      <div class="salaris-inputs">
-        <div class="salaris-rij">
-          <input class="salaris-veld" id="leeftijdInput" type="number" placeholder="leeftijd" min="15" max="99">
-          <input class="salaris-eenheid" id="urenInput" type="number" placeholder="u" min="1" max="60">
-        </div>
-        <div class="salaris-knop" id="salarisResultaat">salaris</div>
-      </div>
-    </section>
+    <div class="loc-grid">
+      <section class="loc-vestiging">
+        <h3>Vestiging</h3>
+        <p>Pomenade 12<br>2711 AR Zoetermeer</p>
+      </section>
+
+      <section class="loc-tijden">
+        <h3>Openingstijden</h3>
+        <p>Maandag 9:00–23:00<br>
+        Dinsdag 9:00–23:00<br>
+        Woensdag 9:00–23:00<br>
+        Donderdag 9:00–23:00<br>
+        Vrijdag 9:00–23:00<br>
+        Zaterdag 9:00–23:00<br>
+        Zondag 9:00–23:00</p>
+      </section>
+
+      <section class="loc-contact">
+        <h3>Contact</h3>
+        <p>Telefoon:<br>088-1321111</p>
+        <p>Email:<br>info@flamenvleeszoetermeer.nl</p>
+      </section>
+
+      <section class="loc-uitzonderingen">
+        <h3>Uitzonderingen</h3>
+        <p>In het geval dat je de restaurant gedurende tijd voor jezelf wilt huren kun je ons mailen via <a href="mailto:xxx@gmail.com">xxx@gmail.com</a></p>
+      </section>
+    </div>
   </main>
 
   <footer>
-    <div class="footer-inner">
-      <img class="footer-logo" src="img/logo.png" alt="Vlam en Vlees">
-      <p class="footer-tagline">Meesters in vuur &amp; smaak — Zoetermeer</p>
-      <nav class="footer-nav">
-        <a href="menu.html">Menu</a>
-        <a href="reserveer.html">Reserveren</a>
-        <a href="openingstijden.html">Contact</a>
-      </nav>
-      <p class="footer-copy">&copy; 2026 Vlam &amp; Vlees. Alle rechten voorbehouden.</p>
-    </div>
+    <?php include 'footer.php'; ?>
   </footer>
 
   <script src="lib/burger-menu.js"></script>
-  <script src="lib/vacature.js"></script>
 </body>
 </html>
